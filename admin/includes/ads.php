@@ -9,12 +9,11 @@ class Ads extends Helper{
     public $position;
     public $ad_image_name;
     public $link;
-    public $size_file;
     public $time_to;
     public $default_image_name;
     public $create_time;
     public $velicina;
-    protected static $db_table_fields = array('name', 'position', 'ad_image_name', 'link','size_file', 'time_to');
+    protected static $db_table_fields = array('name', 'position', 'ad_image_name', 'link', 'time_to');
 
     public $upload_directory = "ads-images";
     public $image_placeholder = 'http://placehold.it/200x200&text=image';

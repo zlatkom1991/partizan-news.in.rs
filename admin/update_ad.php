@@ -21,7 +21,7 @@ if(!empty($_GET['id'])) {
 
     if($_FILES["file"]["error"] == 0) {
       // $path = $ads->picturePath();
-      // unlink($ads->picturePath());
+      unlink($ads->picturePath());
       $ads->setFile($_FILES['file']);
     } else {
       $ads->tmp_path ="";
@@ -30,7 +30,6 @@ if(!empty($_GET['id'])) {
     $ads->save();
     
   
-    // $ads->updateads();
   
     redirect('advertisement.php');
   }
@@ -50,7 +49,7 @@ if(!empty($_GET['id'])) {
               </div>
             <div class="form-group">
             <p>Trenutna slika:</p>
-                    <img src="<?php echo $ads->picturePath(); ?>" alt="">
+                    <img src="<?php echo $ads->picturePath(); ?>" alt="" width="300px">
             </div>
             <div class="form-group">
               <label for="image">Izmeni sliku za reklamu:</label>
