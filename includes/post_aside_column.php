@@ -44,12 +44,12 @@
 							
 							<!-- Ad widget -->
 						<div class="widget center-block">
-						<a href="<?php echo $ad_middle->link; ?>"><img class="center-block" src="admin/<?php echo $ad_middle->picturePath();?>" alt=""></a> 
+						<a href="<?php echo $ad_middle->link; ?>"><img class="center-block" src="admin/<?php echo $ad_middle->picturePath();?>" alt="" width="300px"></a> 
 						</div>
 
 							<!-- Ad widget -->
 							<div class="widget center-block">
-							<a href="<?php echo $ad_bottom->link; ?>"><img class="center-block" src="admin/<?php echo $ad_bottom->picturePath();?>" alt=""></a> 
+							<a href="<?php echo $ad_bottom->link; ?>"><img class="center-block" src="admin/<?php echo $ad_bottom->picturePath();?>" alt="" width="300px"></a> 
 						</div>
 							
 						</div>

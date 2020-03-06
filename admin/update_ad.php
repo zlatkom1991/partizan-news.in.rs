@@ -18,9 +18,10 @@ if(!empty($_GET['id'])) {
     $ads->name = $_POST['name'];
     $ads->time_to = $_POST['time_to'];
     $ads->link = $_POST['link'];
+
     if($_FILES["file"]["error"] == 0) {
       // $path = $ads->picturePath();
-      unlink($ads->picturePath());
+      // unlink($ads->picturePath());
       $ads->setFile($_FILES['file']);
     } else {
       $ads->tmp_path ="";
