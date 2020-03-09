@@ -1,6 +1,8 @@
 <?php require_once('admin/includes/init.php'); ?>
 
-
+<?php
+$url =  (isset($_SERVER['HTTPS'])? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+?>
 
 						<!-- breadcrumb -->
 						<ul class="article-breadcrumb">
@@ -13,9 +15,10 @@
 						<!-- ARTICLE POST -->
 						<article class="article article-post">
 							<div class="article-share">
-								<a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a>
+							<?php echo '<iframe src="https://www.facebook.com/plugins/share_button.php?href='.$url.'&layout=button&size=small&width=68&height=20&appId" width="68" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>'?>
 								<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
 								<a href="#" class="google"><i class="fab fa-google-plus"></i></a>
+								<a href="whatsapp://send?text=Testiramooo?url=proba.php" data-action="share/whatsapp/share">Share via Whatsapp</a>
 							</div>
 							<div class="article-main-img">
 								<img src="<?php echo 'admin/'. $news->picturePath(); ?>" alt="">

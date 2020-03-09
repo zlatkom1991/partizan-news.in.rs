@@ -3,12 +3,18 @@
 <?php 
 
 if(isset($_GET['id'])) {
+
+	if(!is_numeric($_GET['id'])){
+		redirect('index.php');
+	} 
 	
 	if(!$news = News::findById($_GET['id'])){
 		redirect('index.php');
 	};
 
-} else {
+
+} 
+else {
 
 	redirect('index.php');
 }
