@@ -4,10 +4,13 @@
 <?php
 
 
+
 if(!empty($_GET['id'])) {
 
   $ads = Ads::findById($_GET['id']);
- 
+  $t = strtotime($ads->time_to);
+  $time = date('Y-m-d',$t);
+
 }
 
 
@@ -57,7 +60,7 @@ if(!empty($_GET['id'])) {
             </div>
             <div class="form-group">
             <label for="time_to">Traje do:</label><br>
-            <input type="date" id="time_to" name="time_to" value="<?php echo $ads->time_to; ?>"> 
+            <input type="date" id="time_to" name="time_to" value="<?php echo $time; ?>"> 
               </div>
               <div class="form-group">
                 <input type="submit" name="update" class="btn btn-secondary" value="Izmeni">

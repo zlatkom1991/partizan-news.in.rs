@@ -15,10 +15,10 @@ $url =  (isset($_SERVER['HTTPS'])? "https" : "http") . "://$_SERVER[HTTP_HOST]$_
 						<!-- ARTICLE POST -->
 						<article class="article article-post">
 							<div class="article-share">
-							<?php echo '<iframe src="https://www.facebook.com/plugins/share_button.php?href='.$url.'&layout=button&size=small&width=68&height=20&appId" width="68" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>'?>
-								<a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-								<a href="#" class="google"><i class="fab fa-google-plus"></i></a>
-								<a href="whatsapp://send?text=Testiramooo?url=proba.php" data-action="share/whatsapp/share">Share via Whatsapp</a>
+								<a href="https://www.facebook.com/sharer.php?u=<?php echo $url; ?>" class="facebook"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://twitter.com/intent/tweet?url=<?php echo $url; ?>" class="twitter"><i class="fab fa-twitter"></i></a>
+								<a href="whatsapp://send?text=<?php echo $url; ?>"><i class="fab fa-whatsapp"></i></a>
+								<a href="viber://forward?text=<?php echo $url; ?>" class="viber"><i class="fab fa-viber"></i></a>
 							</div>
 							<div class="article-main-img">
 								<img src="<?php echo 'admin/'. $news->picturePath(); ?>" alt="">
