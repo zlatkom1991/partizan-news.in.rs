@@ -33,7 +33,7 @@ if(!empty($_GET['id'])) {
     
   
     // $news->updateNews();
-  
+    $_SESSION['table_message'] = "Uspesno ste izmenili vest!";
     redirect('news-table.php');
   }
 ?>
@@ -81,7 +81,7 @@ if(!empty($_GET['id'])) {
             </div>
             <div class="form-group">
             Trenutna slika na naslovnoj:<br>
-                    <img src="<?php echo $news->picturePath(); ?>" alt="">
+                    <img src="<?php echo $news->picturePath(); ?>" alt="" width="100%">
             </div>
             <div class="form-group">
               <label for="image">Izmeni sliku za naslovnu:</label>

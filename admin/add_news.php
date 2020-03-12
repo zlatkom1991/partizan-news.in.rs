@@ -13,6 +13,7 @@ if(!empty($_POST['submit'])) {
     $news->setFile($_FILES['file']);
 
     if($news->save()) {
+        $_SESSION['table_message'] = "Uspesno ste postavili vest!";
             redirect('news-table.php');
         } else {
             echo 'Nije postavljena vest!';

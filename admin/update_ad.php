@@ -33,7 +33,7 @@ if(!empty($_GET['id'])) {
     $ads->save();
     
   
-  
+    $_SESSION['table_message'] = "Uspesno ste izmenili reklamu!";
     redirect('advertisement.php');
   }
 ?>

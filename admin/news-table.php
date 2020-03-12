@@ -8,9 +8,8 @@
 <?php 
 
 $news = News::findAll();
-
 ?>
-
+<div class="col-md-10 offset-md-1" style="margin-top:20px;color:red;text:align:center"><p><?php echo $_SESSION['table_message'];$_SESSION['table_message']=""; ?></p></div>
 <div class="col-md-10 offset-md-1" style="margin-top:20px">            
                 <table class="table table-fluid hover order-column stripe" id="news-table">
                 <thead class='thead-dark'>

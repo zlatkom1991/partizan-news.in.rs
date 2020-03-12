@@ -7,11 +7,13 @@ if(!empty($_GET['id'])) {
 
         if($news->deletePhoto()){
 
-            redirect('tables.php');
+            $_SESSION['table_message'] = "Uspesno ste obrisali vest!";
+            redirect('news-table.php');
+
         }
         
 } else {
-    redirect('tables.php');
+    redirect('news-table.php');
 }
 
 ?>
