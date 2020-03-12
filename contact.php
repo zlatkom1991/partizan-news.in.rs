@@ -19,9 +19,9 @@
             <h4>Sugestije za sajt:</h4>
             <p>test@test.com</p>
             <h4>Reklamiranje:</h4>
-            <p>drugi@mail.com</p>
+            <p>reklama@mail.com</p>
             <h4>Zapratite nas i pisite nam na instagram stranici:</h4>
-            <a href=""><i class="fab fa-instagram"></i> Partizan Belgrade News</a>
+            <a href="https://www.instagram.com/pbg.news/?hl=sr"><i class="fab fa-instagram"></i> Partizan Belgrade News</a>
             </div>
             <div class="col-sm-6 about-us text-center" >
             <img src="admin/images/about-us.png" alt="" class="center-block img-responsive">
