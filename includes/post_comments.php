@@ -75,8 +75,9 @@ $comments = Comment::findByNewsId($_GET['id']);
 							</div>
 								
 							<form id='comments'>
-								<input class="input" placeholder="Vaše ime" type="text" name="author" id="author">
-								<textarea class="input" placeholder="Komentar" name='comment' id="comment" rows="20"></textarea>
+								<input class="input" placeholder="Vaše ime" type="text" name="author" id="author"
+								 required  pattern="^[A-Za-z0-9]{5,15}(?:[ _-][A-Za-z0-9]+)*$" title="Vaš nadimak može sadržati 15 karaktera. Dozvoljena su slova i brojevi kao i donja crta i razmak">
+								<textarea class="input" placeholder="Komentar" name='comment' id="comment" rows="20" required></textarea>
                                 <input type="submit" name='submit' class="input-btn" value="Postavi komentar" id="postavi_komentar">
 							</form>
 							<p><i class="fas fa-info-circle"></i>  Zadrzavamo prava brisanja neprimerenih komentara</p>

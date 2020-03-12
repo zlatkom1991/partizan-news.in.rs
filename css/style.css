@@ -1256,6 +1256,21 @@ textarea.input {
 	color: #DDD;
 }
 
+.about-us {
+	margin: auto;
+	height: 65vh;
+}
+.about-us img {
+	height: 60%;
+	margin-top: 15%;
+}
+.about-us h2 {
+	margin-top: 10%;
+}
+.about-us h3 {
+	margin-bottom: 5%;
+}
+
 /*=========================================================
 	OWL THEME
 ===========================================================*/

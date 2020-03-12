@@ -6,6 +6,7 @@
 			<div id="bottom-footer" class="section">
 				<!-- CONTAINER -->
 				<div class="container">
+
 					<!-- ROW -->
 					<div class="row">
 						<!-- footer links -->

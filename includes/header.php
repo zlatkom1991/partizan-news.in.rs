@@ -3,7 +3,6 @@
 
 $categories = Category::findAll();
 $top_ad = Ads::findById(1);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +12,16 @@ $top_ad = Ads::findById(1);
 		<meta name="viewport" content="width=device-width, initial-scale=1 charset=utf-8">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Partizan Belgrade News</title>
+		<?php  
+			echo "<title>". $title ."</title>";
+			echo '<meta property="og:title"  content="'. $og_title .'" />
+			<meta property="og:description" content="'. $og_description .'" />
+			<meta property="og:image"  content="'. $og_image .'" />';
+		?>
+		<meta name="keywords" content="Partizan, Partizan Belgrade, Partizan news, Partizan Beograd, Partizan vesti, KK Partizan, Fk Partizan">
+		<meta name="author" content="Zlatko Milovanovic">
+		<meta name="description" content="Sve vesti o Partizanu na jednom mestu">
+
 		<script src="https://kit.fontawesome.com/22a6057826.js" crossorigin="anonymous"></script>
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CLato:300,400" rel="stylesheet"> 

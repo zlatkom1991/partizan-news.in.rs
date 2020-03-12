@@ -1,5 +1,5 @@
 <?php include('admin/includes/init.php'); ?>
-<?php include('includes/header.php'); ?>
+
 <?php 
 
 if(isset($_GET['id'])) {
@@ -19,12 +19,14 @@ else {
 	redirect('index.php');
 }
 
-
-
-
 $baner_bottom = Ads::findById(5);
 
+$title = $news->title;
+$og_title = $news->title;
+$og_description = "Sve vesti o Partizanu na jednom mestu";
+$og_image = "";
 ?>
+<?php include('includes/header.php'); ?>
 		<!-- SECTION -->
 		<div class="section">
 			<!-- CONTAINER -->
