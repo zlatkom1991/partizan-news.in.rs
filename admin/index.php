@@ -5,7 +5,6 @@
 <?php include("includes". DS . "navigation.php"); ?>
 
 
-
 <?php include("includes". DS . "admin_content.php"); ?>
 
 

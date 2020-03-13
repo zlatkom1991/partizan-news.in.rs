@@ -20,6 +20,12 @@
 
 <?php
 
+// $sql = "SELECT * FROM users where username = 'pbg.news.admin' ";
+// $password = "!st@nbulsk@gener@cij@92";
+
+// $user = User::findThisQuery($sql);
+// echo $user->username;
+// echo $user[0]->id;
 
 
 ?>

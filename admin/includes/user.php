@@ -36,11 +36,11 @@ class User extends Helper {
         $username = $database->escapeString($username);
         $password = $database->escapeString($password);
 
-        $sql = "SELECT * FROM " . self::$db_table . " where username = '{$username}' AND password = '{$password}'";
+        $sql = "SELECT * FROM " . self::$db_table . " where username = '{$username}'";
 
         $user_found = self::findThisQuery($sql);
 
-        return !empty($user_found) ? array_shift($user_found) : false;
+        return password_verify($password, $user_found[0]->password) ? array_shift($user_found) : false;
 
     }
 
