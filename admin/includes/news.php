@@ -57,7 +57,7 @@ class News extends Helper{
         
         } else {
  
-            $bla = $file['name'];
+            $bla = date("Y-m-d-h-s").$file['name'];
             $this->news_image_name = str_replace(" ","",$bla);
             $this->tmp_path =  $file['tmp_name'];
             $this->type =      $file['type'];
