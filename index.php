@@ -10,7 +10,6 @@ $og_image="";
 		$baner_bottom = Ads::findById(5);
 
 		// $categories = Category::findAll();
-		phpinfo();
 		?>
 		
 
