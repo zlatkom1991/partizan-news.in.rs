@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Data Tables</title>
+    <title>Admin page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/22a6057826.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/sb-admin.css">
