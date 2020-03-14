@@ -1,6 +1,4 @@
-<?php require_once('new_config.php'); ?>
-
-<?php
+<?php require_once('new_config.php');
 
 class Database {
 

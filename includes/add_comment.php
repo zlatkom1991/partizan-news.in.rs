@@ -1,5 +1,4 @@
-<?php require_once('../admin/includes/init.php'); ?>
-<?php
+<?php require_once('../admin/includes/init.php');
 
   if(isset($_POST['author']) && isset($_POST['comment']) && isset($_GET['id'])) {
 

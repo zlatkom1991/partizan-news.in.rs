@@ -1,5 +1,4 @@
-<?php include_once('admin/includes/init.php'); ?>
-<?php 
+<?php include_once('admin/includes/init.php');
 
 $categories = Category::findAll();
 $top_ad = Ads::findById(1);

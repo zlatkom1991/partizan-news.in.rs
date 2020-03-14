@@ -6,14 +6,11 @@ $og_image="";
 ?>
 <?php include('includes/header.php'); ?>
 		<?php
-		// $title = "Partizan Belgrade News";
-		$news = News::findById(88);
-		$druga = News::findById(52);
-		$numberOfComments = News::countComments(45);
+
 		$baner_bottom = Ads::findById(5);
 
 		// $categories = Category::findAll();
-		
+		phpinfo();
 		?>
 		
 

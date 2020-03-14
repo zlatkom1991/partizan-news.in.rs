@@ -1,7 +1,10 @@
-<?php ob_start(); ?>
-<?php require('includes/init.php'); ?>
+<?php 
+ob_start();
+require('includes/init.php');
 
-<?php if(!$session->isSignedIn()) { redirect("login.php"); } ?>  
+if(!$session->isSignedIn()) { redirect("login.php"); }
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
