@@ -19,14 +19,12 @@ $comments = Comment::findByNewsId($_GET['id']);
 								echo '
 								<div class="media">
 								<div class="media-left">
-									<img src="img/user.png" alt="">
+									
 								</div>
 								<div class="media-body">
-									<div class="media-heading">
-										<h5>Admin <span class="reply-time">Just now</span></h5>
-									</div>
-									<p>Jos uvek nema komentara...</p>				
-									<a href="#" class="reply-btn">Reply</a>
+
+									<p>Trenutno nema komentara...</p>				
+									
 								</div>
 								</div>
 								';

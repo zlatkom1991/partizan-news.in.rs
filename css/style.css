@@ -211,17 +211,17 @@ textarea.input {
 }
 
 #nav-header .nav-logo {
-	display:none;
+	/* display:none; */
 	float:left;
 }
 
 #nav-header .nav-logo .logo {
-	display:inline-block;
+	display: inherit !important;
 }
 
 #nav-header .nav-logo .logo > img {
-	width: 100%;
-	max-height: 90px;
+	/* width: 60px; */
+	max-height: 70px;
 }
 
 #nav-header.fixed {
@@ -358,7 +358,7 @@ textarea.input {
 	
 	#nav-header .nav-logo {
 		display:block;
-		float:none;
+		float:left;
 		text-align:center;
 		margin-bottom:30px;
 	}

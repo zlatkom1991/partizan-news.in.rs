@@ -39,7 +39,7 @@
 											</ul>
 										</div>
 										<div class="article-body">
-											<h3 class="article-title"><a href="post.php?id='. $post->id .'">'. $post->title .'</a></h3>
+											<h3 class="article-title cut-title"><a href="post.php?id='. $post->id .'">'. $post->title .'</a></h3>
 											<ul class="article-meta">
 												<li><i class="fa fa-clock-o"></i> '. timeFormat($post->create_time) .'</li>
 												<li><i class="fa fa-comments"></i> '. News::countComments($post->id).'</li>
@@ -58,7 +58,7 @@
 													</a>
 												</div>
 												<div class="article-body">
-													<h4 class="article-title"><a href="post.php?id='.$post->id.'">'.$post->title.'</a></h4>
+													<h4 class="article-title cut-title"><a href="post.php?id='.$post->id.'">'.$post->title.'</a></h4>
 													<ul class="article-meta">
 														<li><i class="fa fa-clock-o"></i> ' . timeFormat($post->create_time) .'</li>
 														<li><i class="fa fa-comments"></i> '. News::countComments($post->id).'</li>
@@ -102,7 +102,7 @@
 											</ul>
 										</div>
 										<div class="article-body">
-											<h3 class="article-title"><a href="post.php?id='. $post->id .'">'. $post->title .'</a></h3>
+											<h3 class="article-title cut-title"><a href="post.php?id='. $post->id .'">'. $post->title .'</a></h3>
 											<ul class="article-meta">
 												<li><i class="fa fa-clock-o"></i> '. timeFormat($post->create_time) .'</li>
 												<li><i class="fa fa-comments"></i> '. News::countComments($post->id).'</li>
@@ -121,7 +121,7 @@
 													</a>
 												</div>
 												<div class="article-body">
-													<h4 class="article-title"><a href="post.php?id='.$post->id.'">'.$post->title.'</a></h4>
+													<h4 class="article-title cut-title"><a href="post.php?id='.$post->id.'">'.$post->title.'</a></h4>
 													<ul class="article-meta">
 														<li><i class="fa fa-clock-o"></i> ' . timeFormat($post->create_time) .'</li>
 														<li><i class="fa fa-comments"></i> '. News::countComments($post->id).'</li>
@@ -166,7 +166,7 @@
 										</ul>
 									</div>
 									<div class="article-body">
-										<h4 class="article-title"><a href="post.php?id=<?php echo $row->id; ?>"><?php echo $row->title; ?></a></h4>
+										<h4 class="article-title cut-title"><a href="post.php?id=<?php echo $row->id; ?>"><?php echo $row->title; ?></a></h4>
 										<ul class="article-meta">
 											<li><i class="fa fa-clock-o"></i> <?php echo timeFormat($row->create_time); ?></li>
 											<li><i class="fa fa-comments"></i> <?php echo News::countComments($row->id); ?></li>

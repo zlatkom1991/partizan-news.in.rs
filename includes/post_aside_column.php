@@ -17,12 +17,12 @@
 								<h2 class="title">Stay Connected</h2>
 							</div>
 							<ul>
-								<li><a href="#" class="facebook"><i class="fa fa-facebook"></i><br><span>Facebook</span></a></li>
-								<li><a href="#" class="twitter"><i class="fa fa-twitter"></i><br><span>Twitter</span></a></li>
-								<li><a href="#" class="google"><i class="fa fa-google"></i><br><span>Google+</span></a></li>
-								<li><a href="#" class="instagram"><i class="fa fa-instagram"></i><br><span>Instagram</span></a></li>
-								<li><a href="#" class="youtube"><i class="fa fa-youtube"></i><br><span>Youtube</span></a></li>
-								<li><a href="#" class="rss"><i class="fa fa-rss"></i><br><span>RSS</span></a></li>
+								<li><a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-square"></i><br><span>Facebook</span></a></li>
+								<li><a href="#" class="twitter" target="_blank"><i class="fab fa-twitter"></i><br><span>Twitter</span></a></li>
+								<li><a href="https://www.instagram.com/pbg.news/?hl=sr" class="google" target="_blank"><i class="fab fa-google"></i><br><span>Google+</span></a></li>
+								<li><a href="https://www.instagram.com/pbg.news/?hl=sr" class="instagram" target="_blank"><i class="fab fa-instagram"></i><br><span>Instagram</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCin-zbw5U0ctNtJCZ96XmFQ" class="youtube" target="_blank"><i class="fab fa-youtube"></i><br><span>Youtube</span></a></li>
+								<li><a href="https://www.instagram.com/pbg.news/?hl=sr" class="rss" target="_blank"><i class="fab fa-rss"></i><br><span>RSS</span></a></li>
 							</ul>
 						</div>
 						<!-- /social widget -->

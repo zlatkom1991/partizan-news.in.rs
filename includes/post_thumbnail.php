@@ -14,7 +14,7 @@ $thumbnailPosts = News::findFromTo(0,3);
 			<!-- ARTICLE -->
 			<article class="article thumb-article">
 			<a href="post.php?id=<?php echo $thumbPost->id; ?>">
-				<div class="article-img" style='height:600px'>
+				<div class="article-img" id="smaller-img-phone"style='height:600px'>
 					<img src="<?php echo 'admin/'.  $thumbPost->picturePath(); ?>" alt="" height="600px">
 				</div>
 				</a>

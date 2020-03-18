@@ -111,14 +111,3 @@ $html = '';
 			<!-- /CONTAINER -->
 		</div>
 		<!-- /SECTION -->
-		<script>
-		 $(document).ready(function ()
-			{ $(".cut-title").each(function(i){
-					var len=$(this).text().trim().length;
-					if(len>90)
-					{
-						$(this).text($(this).text().substr(0,80)+'...');
-					}
-				});
-			});
-		</script>

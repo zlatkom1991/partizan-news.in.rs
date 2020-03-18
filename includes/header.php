@@ -44,7 +44,7 @@ $top_ad = Ads::findById(1);
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     </head>
 	<body>
 	
@@ -79,7 +79,7 @@ $top_ad = Ads::findById(1);
 			<div id="center-header">
 				<div class="container">
 					<div class="header-logo">
-						<a href="index.php" class="logo"><img src="./img/grb.png" alt="" height="90px"></a>
+						<a href="index.php" class="logo"><img src="./img/partizan-news-logo.jpeg" alt="" height="110px"></a>
 					</div>
 					<div class="center-block">
 						<a href="<?php echo $top_ad->link; ?>"><img class="header-ads" src="<?php echo "admin/" . $top_ad->picturePath(); ?>" alt="" width="728px"></a> 
@@ -92,16 +92,13 @@ $top_ad = Ads::findById(1);
 			<div id="nav-header">
 				<div class="container">
 					<nav id="main-nav">
-						<div class="nav-logo">
-							<a href="#" class="logo"><img src="./img/logo.png" alt=""></a>
+						<div class="nav-logo float-left">
+							<a href="#" class="logo"><img src="./img/partizan-logo-small.png" alt=""></a>
 						</div>
 						<ul class="main-nav nav navbar-nav">
+							<!-- <li><a href="index.php">Partizan N</a></li> -->
 							<li><a href="index.php">Početna</a></li>
-
-							<?php foreach($categories as $category) : ?>
-							<li><a href="#<?php echo $category->name; ?>"><?php echo $category->name ?> </a></li>
-							<?php endforeach; ?>
-							
+							<li><a href="index.php#Fudbal">Fudbal</a></li>
 						</ul>
 					</nav>
 					<div class="button-nav">
