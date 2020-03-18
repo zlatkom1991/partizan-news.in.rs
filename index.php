@@ -21,7 +21,7 @@ $og_image="http://partizan-news.in.rs/img/partizan-news-logo.jpeg";
 		<?php include('includes/trending_post.php'); ?>
 
 
-
+<?php echo 'testiiramoo'; ?>
 
 		<?php include('includes/category_posts.php'); ?>
 		
