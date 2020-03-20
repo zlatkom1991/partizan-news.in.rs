@@ -60,7 +60,7 @@ $top_ad = Ads::findById(1);
 			<div id="center-header">
 				<div class="container">
 					<div class="header-logo">
-						<a href="index.php" class="logo"><img src="../img/logo-novi-providan.jpg" alt="" height="90px"></a>
+						<a href="index.php" class="logo"><img src="<?php echo SITE_ROOTH . DS . '../img/logo-novi-providan.jpg'; ?>" alt="" height="90px"></a>
 					</div>
 					<div class="center-block">
 						<a href="<?php echo $top_ad->link; ?>"><img class="header-ads" src="<?php echo "admin/" . $top_ad->picturePath(); ?>" alt="" width="728px"></a> 
