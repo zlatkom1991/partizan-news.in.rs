@@ -3,7 +3,7 @@
 // /home/username/public_html
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 
-define('SITE_ROOT', '/home/zlatkom/public_html/partizan-news.in.rs/admin');
+define('SITE_ROOT', '/home/zlatkom/public_html/partizan-news.in.rs');
 
 defined('INCLUDES_PATH') ? null : define('INCLUDES_PATH', SITE_ROOT . DS .'admin' . DS . 'includes');
 
