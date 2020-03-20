@@ -60,7 +60,7 @@ $top_ad = Ads::findById(1);
 			<div id="center-header">
 				<div class="container">
 					<div class="header-logo">
-						<a href="index.php" class="logo"><img src="./img/logo-novi-providan.jpg" alt="" height="90px"></a>
+						<a href="index.php" class="logo"><img src="../img/logo-novi-providan.jpg" alt="" height="90px"></a>
 					</div>
 					<div class="center-block">
 						<a href="<?php echo $top_ad->link; ?>"><img class="header-ads" src="<?php echo "admin/" . $top_ad->picturePath(); ?>" alt="" width="728px"></a> 
@@ -73,8 +73,8 @@ $top_ad = Ads::findById(1);
 			<div id="nav-header">
 				<div class="container">
 					<nav id="main-nav">
-						<div class="nav-logo"">
-							<a href="https://partizan-news.in.rs" class="logo"><img src="./img/partizan-logo-small.png" alt=""></a>
+						<div class="nav-logo">
+							<a href="https://partizan-news.in.rs" class="logo"><img src="../img/partizan-logo-small.png" alt=""></a>
 						</div>
 						<ul class="main-nav nav navbar-nav">
 							<li><a href="index.php">Početna</a></li>
