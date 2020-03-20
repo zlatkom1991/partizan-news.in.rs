@@ -12,9 +12,9 @@
 						<!-- footer links -->
 						<div class="col-md-6 col-md-push-6">
 							<ul class="footer-links">
-								<li><a href="#">O nama</a></li>
-								<li><a href="#">Kontakt</a></li>
-								<li><a href="#">Reklamiranje</a></li>
+							    <li><a href="https://partizan-news.in.rs">Početna</a></li>
+								<li><a href="https://partizan-news.in.rs/about_us.php">O nama</a></li>
+								<li><a href="https://partizan-news.in.rs/contact.php">Kontakt</a></li>
 								<!-- <li><a href="#">Privacy</a></li> -->
 							</ul>
 						</div>
@@ -24,7 +24,7 @@
 						<div class="col-md-6 col-md-pull-6">
 							<div class="footer-copyright">
 								<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
- This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> | php powered by Zlatko_M <br>
+ This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> | Edited and php powered by Zlatko_M <br>
  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
 							</div>

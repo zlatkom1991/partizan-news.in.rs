@@ -211,17 +211,19 @@ textarea.input {
 }
 
 #nav-header .nav-logo {
-	/* display:none; */
+	/*display:none;*/
+	display:inline-block;
 	float:left;
 }
 
 #nav-header .nav-logo .logo {
-	display: inherit !important;
+	display:inline-block;
 }
 
 #nav-header .nav-logo .logo > img {
-	/* width: 60px; */
-	max-height: 70px;
+	/*width: 100%;*/
+	height: 70px;
+	margin-right: 30px;
 }
 
 #nav-header.fixed {
@@ -358,7 +360,7 @@ textarea.input {
 	
 	#nav-header .nav-logo {
 		display:block;
-		float:left;
+		float:none;
 		text-align:center;
 		margin-bottom:30px;
 	}
@@ -1414,7 +1416,9 @@ textarea.input {
 	.article .article-img {
 		height: 200px;
 	}
-
+.header-logo .logo > img {
+    height: 65px;
+}
 
 	
 }

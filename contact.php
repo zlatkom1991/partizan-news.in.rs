@@ -6,19 +6,24 @@ $og_image ="";
 include('includes/header.php');
 
 ?>
+<style>
+    #forma{
+        border: 1px solid #E8E8E8	;
+        margin-top: 10px;
+    }
+</style>
+<div class="container">
 
-<div class="container w-100 p-3" style="background-image:url('https://i.pinimg.com/originals/e5/d3/e9/e5d3e9b401d835852063a082175f8487.jpg')">
+<div class="row">
 
-<div class="row w-100 p-3" style="background-color:white">
-
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-8 col-md-offset-2" id="forma">
 
         <h1>Kontakt</h1>
 
         <p class="lead"></p>
 
         <!-- We're going to place the form here in the next step -->
-        <form id="contact-form" method="post"  role="form">
+        <form id="contact-form" method="post" action="includes/send_mail.php" role="form">
 
     <div class="messages"></div>
 
@@ -65,7 +70,7 @@ include('includes/header.php');
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="form_message">Poruka *</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="Unesite vašu poruku *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Unesite vašu poruku *" rows="15" required="required" data-error="Please, leave us a message."></textarea>
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -88,50 +93,52 @@ include('includes/header.php');
 </div>
 
 </div>
+
 <script>
+
 $(function () {
 
 // init the validator
 // validator files are included in the download package
 // otherwise download from http://1000hz.github.io/bootstrap-validator
 
-$('#contact-form').validator();
+$('#contact-form').serialize();
 
 
 // when the form is submitted
 $('#contact-form').on('submit', function (e) {
 
-    // if the validator does not prevent form submit
-    if (!e.isDefaultPrevented()) {
-        var url = "includes/contact.php";
-
-        // POST values in the background the the script URL
+          // show that something is loading
+        $('#response').html("<b>Loading response...</b>");
+         
+        /*
+         * 'post_receiver.php' - where you will pass the form data
+         * $(this).serialize() - to easily read form data
+         * function(data){... - data contains the response from post_receiver.php
+         */
         $.ajax({
-            type: "POST",
-            url: url,
-            data: $(this).serialize(),
-            success: function (data)
-            {
-                // data = JSON object that contact.php returns
-
-                // we recieve the type of the message: success x danger and apply it to the 
-                var messageAlert = 'alert-' + data.type;
-                var messageText = data.message;
-
-                // let's compose Bootstrap alert box HTML
-                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                
-                // If we have messageAlert and messageText
-                if (messageAlert && messageText) {
-                    // inject the alert to .messages div in our form
-                    $('#contact-form').find('.messages').html(alertBox);
-                    // empty the form
-                    $('#contact-form')[0].reset();
-                }
-            }
+            type: 'POST',
+            url: 'includes/send_mail.php', 
+            data: $(this).serialize()
+        })
+        .done(function(data){
+             
+            // show the response
+            $('#response').html(data);
+            if(!alert("Vaša poruka je poslata, potrudićemo se da vam odgovorimo u najkraćem mogućem roku, hvala!")){window.location.reload();}
+             
+        })
+        .fail(function() {
+         
+            // just in case posting your form failed
+            alert( "Došlo je do greške prilikom slanja poruke, molimo pokušajte kasnije..." );
+             
         });
+ 
+        // to prevent refreshing the whole page page
         return false;
-    }
+ 
+    
 })
 });
 

@@ -1,4 +1,5 @@
-<?php require_once('init.php');
+<?php require_once('init.php'); ?>
+<?php
 
 class Ads extends Helper{
 

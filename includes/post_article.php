@@ -1,12 +1,13 @@
-<?php require_once('admin/includes/init.php'); 
+<?php require_once('admin/includes/init.php'); ?>
 
+<?php
 $url =  (isset($_SERVER['HTTPS'])? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 
 						<!-- breadcrumb -->
 						<ul class="article-breadcrumb">
 							<li><a href="index.php">Početna</a></li>
-							<li><a href="#"><?php echo $news->categoryName($_GET['id']); ?></a></li>
+							<li><a href="index.php#<?php echo $news->categoryName($_GET['id']); ?>"><?php echo $news->categoryName($_GET['id']); ?></a></li>
 							<li><?php echo $news->title; ?></li>
 						</ul>
 						<!-- /breadcrumb -->
@@ -39,14 +40,14 @@ $url =  (isset($_SERVER['HTTPS'])? "https" : "http") . "://$_SERVER[HTTP_HOST]$_
 						<!-- /ARTICLE POST -->
 						
 						<!-- widget tags -->
-						<div class="widget-tags">
-							<ul>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Sport</a></li>
-								<li><a href="#">Lifestyle</a></li>
-								<li><a href="#">Fashion</a></li>
-								<li><a href="#">Music</a></li>
-								<li><a href="#">Business</a></li>
-							</ul>
-						</div>
+						<!--<div class="widget-tags">-->
+						<!--	<ul>-->
+						<!--		<li><a href="#">News</a></li>-->
+						<!--		<li><a href="#">Sport</a></li>-->
+						<!--		<li><a href="#">Lifestyle</a></li>-->
+						<!--		<li><a href="#">Fashion</a></li>-->
+						<!--		<li><a href="#">Music</a></li>-->
+						<!--		<li><a href="#">Business</a></li>-->
+						<!--	</ul>-->
+						<!--</div>-->
 						<!-- /widget tags -->

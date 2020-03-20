@@ -1,11 +1,6 @@
+<?php include('includes/header.php');
 
-<?php include('includes/header.php'); ?>
-
-
-
-<?php include('includes/navigation.php'); ?>
-
-<?php 
+include('includes/navigation.php'); 
 
 $news = News::findAll();
 ?>
@@ -34,12 +29,12 @@ $news = News::findAll();
                             <td><?php echo $row->title; ?></td>
                             <!-- <td><?php // echo $row->body; ?></td> -->
                             <td><?php echo $row->categoryName($row->id); ?></td>
-                            <td><img src="<?php echo $row->picturePath(); ?>" alt="image" height="50px"></td>
+                            <td><img src="<?php echo $row->picturePath(); ?>" alt="image" height="50px" width="80px"></td>
                             <td><?php echo $row->countComments($row->id); ?></td>
                             <td><?php echo timeFormat($row->create_time); ?></td>
                             <td>
                                 <div class="action_links">               
-                                    <a href="../post.php?id=<?php echo $row->id; ?>" target="_blank">Pogledaj vest</a>
+                                    <a href="https://partizan-news.in.rs/post.php?id=<?php echo $row->id; ?>" target="_blank">Pogledaj vest</a>
                                 </div>
                             </td>
                             <td>

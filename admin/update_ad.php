@@ -30,11 +30,16 @@ if(!empty($_GET['id'])) {
       $ads->tmp_path ="";
     }
     
-    $ads->save();
+    if($ads->save()){
+            $_SESSION['table_message'] = "Uspesno ste izmenili reklamu!";
+            redirect('advertisement.php');
+    }else {
+            $_SESSION['table_message'] = "Uspesno ste izmenili reklamu!";
+            redirect('advertisement.php');
+    }
     
   
-    $_SESSION['table_message'] = "Uspesno ste izmenili reklamu!";
-    redirect('advertisement.php');
+
   }
 ?>
 

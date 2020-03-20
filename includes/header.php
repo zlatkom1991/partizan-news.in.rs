@@ -5,17 +5,20 @@ $top_ad = Ads::findById(1);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1 charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 		<?php  
 			echo "<title>". $title ."</title>";
 			echo '<meta property="og:title"  content="'. $og_title .'" />
 			<meta property="og:description" content="'. $og_description .'" />
-			<meta property="og:image"  content="'. $og_image .'" />';
+			<meta property="og:image"  content="https://partizan-news.in.rs/admin/ads-images/proba-logo.png" />
+			<meta property="og:image:secure"  content='. $og_image .' />
+			<meta property="og:image:width" content="200" />
+            <meta property="og:image:height" content="90" />';
 		?>
 		<meta name="keywords" content="Partizan, Partizan Belgrade, Partizan news, Partizan Beograd, Partizan vesti, KK Partizan, Fk Partizan">
 		<meta name="author" content="Zlatko Milovanovic">
@@ -45,41 +48,19 @@ $top_ad = Ads::findById(1);
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<meta name="google-site-verification" content="xtkDdSai_28NxtLMnd4Z1WX6icr7lo1BEfZN571qMcM" />
     </head>
 	<body>
 	
 		<!-- Header -->
 		<header id="header">
-			<!-- Top Header -->
-			<!-- <div id="top-header">
-				<div class="container">
-					<div class="header-links">
-						<ul>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Advertisement</a></li>
-							<li><a href="#">Privacy</a></li>
-							<li><a href="#"><i class="fa fa-sign-in"></i> Login</a></li>
-						</ul>
-					</div>
-					<div class="header-social">
-						<ul>
-							<li><a href="#"><i class="fas fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fas fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fas fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fas fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fas fa-youtube"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div> -->
-			<!-- /Top Header -->
+
 			
 			<!-- Center Header -->
 			<div id="center-header">
 				<div class="container">
 					<div class="header-logo">
-						<a href="index.php" class="logo"><img src="./img/partizan-news-logo.jpeg" alt="" height="110px"></a>
+						<a href="index.php" class="logo"><img src="./img/logo-novi-providan.jpg" alt="" height="90px"></a>
 					</div>
 					<div class="center-block">
 						<a href="<?php echo $top_ad->link; ?>"><img class="header-ads" src="<?php echo "admin/" . $top_ad->picturePath(); ?>" alt="" width="728px"></a> 
@@ -92,13 +73,15 @@ $top_ad = Ads::findById(1);
 			<div id="nav-header">
 				<div class="container">
 					<nav id="main-nav">
-						<div class="nav-logo float-left">
-							<a href="#" class="logo"><img src="./img/partizan-logo-small.png" alt=""></a>
+						<div class="nav-logo"">
+							<a href="https://partizan-news.in.rs" class="logo"><img src="./img/partizan-logo-small.png" alt=""></a>
 						</div>
 						<ul class="main-nav nav navbar-nav">
-							<!-- <li><a href="index.php">Partizan N</a></li> -->
 							<li><a href="index.php">Početna</a></li>
+                            <li><a href="index.php#Košarka">Košarka</a></li>
 							<li><a href="index.php#Fudbal">Fudbal</a></li>
+							<li><a href="about_us.php">O nama</a></li>
+							<li><a href="contact.php">Kontakt</a></li>
 						</ul>
 					</nav>
 					<div class="button-nav">

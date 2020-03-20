@@ -1,32 +1,28 @@
-<?php include('admin/includes/init.php'); ?>
-
-<?php 
+<?php require_once('admin/includes/init.php');
 
 if(isset($_GET['id'])) {
 
 	if(!is_numeric($_GET['id'])){
-		redirect('index.php');
+		redirect('https://partizan-news.in.rs/index.php');
 	} 
 	
 	if(!$news = News::findById($_GET['id'])){
-		redirect('index.php');
+		redirect('https://partizan-news.in.rs/index.php');
 	};
 
 
 } 
 else {
 
-	redirect('index.php');
+	redirect('https://partizan-news.in.rs/index.php');
 }
 
 $baner_bottom = Ads::findById(5);
 
 $title = $news->title;
 $og_title = $news->title;
-$og_description = "Sve vesti o Partizanu na jednom mestu";
-$og_image = "";
-?>
-<?php include('includes/header.php'); ?>
+$og_description = $news->title;
+include('includes/header.php'); ?>
 		<!-- SECTION -->
 		<div class="section">
 			<!-- CONTAINER -->
@@ -76,7 +72,7 @@ $og_image = "";
 					<div class="col-md-12">
 						<!-- section title -->
 						<div class="section-title">
-							<h2 class="title">Jos vesti - <?php echo  $news->categoryName($_GET['id']); ?></h2>
+							<h2 class="title">Još vesti - <?php echo $news->categoryName($_GET['id']); ?></h2>
 						</div>
 						<!-- /section title -->
 						

@@ -1,6 +1,6 @@
 <?php include("includes/header.php"); ?>
 
-<?php if(!$session->isSignedIn()) { redirect("login.php"); } ?>        
+     
 
 <?php include("includes". DS . "navigation.php"); ?>
 

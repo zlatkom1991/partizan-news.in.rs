@@ -1,6 +1,5 @@
 <?php
 
-
 require 'PHPMailer-5.2-stable/PHPMailerAutoload.php';
 
 /*
@@ -8,27 +7,27 @@ require 'PHPMailer-5.2-stable/PHPMailerAutoload.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'zlajagrobar91@gmail.com';
-$fromName = 'Demo contact form';
+$fromEmail = 'test@gmail.com';
+$fromName = 'Poruka sa kontakt forme sa sajta';
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'zlajagrobar91@gmail.com';
+$sendToEmail = 'partizanbelgradenews@gmail.com';
 $sendToName = 'Zlatko';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'Nova poruka sa kontakt forme';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Uspešno prosleđena poruka, potrudicemo se da vam odgovorimo u što kraćem roku. Hvala!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$errorMessage = 'Došlo je do greške prilikom slanja poruke, molimo pokušajte ponovo kasnije';
 
-$emailTextHtml = "<h1>You have a new message from your contact form</h1><hr>";
+$emailTextHtml = "<h1>Imate novu poruku sa kontakt forme</h1><hr>";
 $emailTextHtml .= "<table>";
 
 foreach ($_POST as $key => $value) {
@@ -53,12 +52,12 @@ $mail->Subject = $subject;
 $mail->msgHTML($emailTextHtml); // this will also create a plain-text version of the HTML email, very handy
 
 if(!$mail->send()) {
-    throw new \Exception('I could not send the email.' . $mail->ErrorInfo);
+    throw new \Exception('Email nije poslat.' . $mail->ErrorInfo);
 }
 
 
 // if requested by AJAX request return JSON response
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
 
     header('Content-Type: application/json');

@@ -19,12 +19,14 @@ $comments = Comment::findByNewsId($_GET['id']);
 								echo '
 								<div class="media">
 								<div class="media-left">
-									
+									<img src="img/user.png" alt="">
 								</div>
 								<div class="media-body">
-
-									<p>Trenutno nema komentara...</p>				
-									
+									<div class="media-heading">
+										<h5>Admin <span class="reply-time">Just now</span></h5>
+									</div>
+									<p>Jos uvek nema komentara...</p>				
+									<a href="#" class="reply-btn">Reply</a>
 								</div>
 								</div>
 								';
@@ -69,16 +71,16 @@ $comments = Comment::findByNewsId($_GET['id']);
 						<!-- reply form -->
 						<div class="article-reply-form">
 							<div class="section-title">
-								<h2 class="title">Ostavite vas komentar</h2>
+								<h2 class="title">Ostavite vaš komentar</h2>
 							</div>
 								
 							<form id='comments'>
 								<input class="input" placeholder="Vaše ime" type="text" name="author" id="author"
-								 required  pattern="^[A-Za-z0-9]{5,15}(?:[ _-][A-Za-z0-9]+)*$" title="Vaš nadimak može sadržati 15 karaktera. Dozvoljena su slova i brojevi kao i donja crta i razmak">
+								 required  pattern="^[A-Za-z0-9]{5,15}(?:[ _-][A-Za-z0-9]+)*$" title="Vaš nadimak može sadržati između 5 i 15 karaktera. Dozvoljena su slova i brojevi kao i donja crta i razmak">
 								<textarea class="input" placeholder="Komentar" name='comment' id="comment" rows="20" required></textarea>
                                 <input type="submit" name='submit' class="input-btn" value="Postavi komentar" id="postavi_komentar">
 							</form>
-							<p><i class="fas fa-info-circle"></i>  Zadrzavamo prava brisanja neprimerenih komentara</p>
+							<p><i class="fas fa-info-circle"></i>  Zadržavamo prava brisanja neprimerenih komentara</p>
 						</div>
 						<!-- /reply form -->
 						
@@ -90,7 +92,6 @@ $comments = Comment::findByNewsId($_GET['id']);
 
 var id= getUrlVars();
 var request;
-
 $("#comments").submit(function(event){
 
 // Prevent default posting of form - put here to work in case of errors

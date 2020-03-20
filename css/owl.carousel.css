@@ -62,7 +62,6 @@
     -ms-user-select: none;
     user-select: none; }
   .owl-carousel.owl-loaded {
-    height: 450px;
     display: block; }
   .owl-carousel.owl-loading {
     opacity: 0;
@@ -169,11 +168,17 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
-
   
-  /* ################### Mobile phone ####################### */
+  
+  
+  
+  
+  
+  
+  
+    /* ################### Mobile phone ####################### */
 
-  @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
   
     .owl-carousel {
       display: none;
@@ -344,13 +349,12 @@
     height:450px;
   }
   .article-body h2{
-    font-size: 20px;
+    font-size: 18px;
   }
   #smaller-img-phone {
     height: 450px !important;
   }
-
-  .article .article-meta li{
-    font-size: 11px;
-  }
-  }
+ .article .article-meta li{
+     font-size: 11px !important;
+ }
+  
