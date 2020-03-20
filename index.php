@@ -1,7 +1,8 @@
 <?php 
         $title = "Partizan Belgrade News";
         $og_title = $title;
-        $og_description = "Najbrze i najtacnije informacije o Partizanu na jednom mestu...";
+		$og_description = "Najbrze i najtacnije informacije o Partizanu na jednom mestu...";
+		$og_image = "";
         include('includes/header.php');
 		$news = News::findById(88);
 		$druga = News::findById(52);
