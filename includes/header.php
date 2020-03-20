@@ -74,7 +74,7 @@ $top_ad = Ads::findById(1);
 				<div class="container">
 					<nav id="main-nav">
 						<div class="nav-logo">
-							<a href="https://partizan-news.in.rs" class="logo"><img src="..//img/partizan-logo-small.png" alt=""></a>
+							<a href="https://partizan-news.in.rs" class="logo"><img src="../../img/partizan-logo-small.png" alt=""></a>
 						</div>
 						<ul class="main-nav nav navbar-nav">
 							<li><a href="index.php">Početna</a></li>
