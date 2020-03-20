@@ -90,7 +90,7 @@ class News extends Helper{
 
             }
 
-            $target_path = SITE_ROOT . DS . $this->upload_directory . DS . $this->news_image_name;
+            $target_path = SITE_ROOT . DS . 'admin' . DS . $this->upload_directory . DS . $this->news_image_name;
 
             if(file_exists($target_path)) {
 
