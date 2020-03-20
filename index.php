@@ -2,7 +2,7 @@
         $title = "Partizan Belgrade News";
         $og_title = $title;
 		$og_description = "Najbrze i najtacnije informacije o Partizanu na jednom mestu...";
-		$og_image = "";
+		$og_image = "https://partizan-news.in.rs/img/logo-novi-providan.jpg";
         include('includes/header.php');
 		$news = News::findById(88);
 		$druga = News::findById(52);
