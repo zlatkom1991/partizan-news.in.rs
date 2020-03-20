@@ -13,6 +13,9 @@
             <a class="nav-link " href="https://admin.partizan-news.in.rs/index.php"><i class="fa fa-fw fa fa-home"></i>Admin </a>
         </li>
         <li class="nav-item">
+            <a class="nav-link " href="https://admin.partizan-news.in.rs/index.php"><i class="fa fa-fw fa fa-home"></i>Test </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link " href="https://admin.partizan-news.in.rs/upload.php"><i class="fa fa-fw fa fa-cloud-upload"></i> Dodaj vest</a>
         </li>
         <li class="nav-item">
