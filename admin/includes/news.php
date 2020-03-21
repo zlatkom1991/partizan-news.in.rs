@@ -149,7 +149,7 @@ class News extends Helper{
         $sql.= implode(", ", $properties_pairs);
         $sql.= " WHERE id = '" . $database->escapeString($this->id) . " '; ";
 
-        $target_path = SITE_ROOT . DS . $this->upload_directory . DS . $this->news_image_name;
+        $target_path = SITE_ROOT . DS . 'admin' . DS .  $this->upload_directory . DS . $this->news_image_name;
 
         if(move_uploaded_file($this->tmp_path, $target_path)) {
                 
