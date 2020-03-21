@@ -346,13 +346,13 @@
       width: 100%; }
   
   .thumb-article{
-    height:30%;
+    height:100%;
   }
   .article-body h2{
     font-size: 16px;
   }
   #smaller-img-phone {
-    height: 30% !important;
+    height: 100% !important;
     
   }
  .article .article-meta li{
