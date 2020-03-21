@@ -352,7 +352,8 @@
     font-size: 16px;
   }
   #smaller-img-phone {
-    height: 100% !important;
+    max-width: 100%;
+    height: auto;
     
   }
  .article .article-meta li{
