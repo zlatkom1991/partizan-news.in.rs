@@ -45,7 +45,7 @@ $html = '';
 			        <h4 class="article-title"><a class="cut-title" href="post.php?id=<?php echo $biggerPost->id; ?>"><?php echo $biggerPost->title; ?></a></h4>
 			        <ul class="article-meta">
 				        <li><i class="fa fa-clock-o"></i> <?php echo timeFormat($biggerPost->create_time); ?></li>
-				        <li><i class="fa fa-comments"></i><?php echo News::countComments($thumbPost->id); ?></li>
+				        <li><i class="fa fa-comments"></i><?php echo News::countComments($biggerPost->id); ?></li>
 			        </ul>
 		        </div>
 	        </article>
