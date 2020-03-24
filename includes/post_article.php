@@ -31,7 +31,7 @@ $url =  (isset($_SERVER['HTTPS'])? "https" : "http") . "://$_SERVER[HTTP_HOST]$_
 								<h1 class="article-title"><?php echo $news->title; ?></h1>
 								<ul class="article-meta">
 									<li><i class="fa fa-clock-o"></i>&nbsp;<?php echo timeFormat($news->create_time); ?></li>
-									<li><i class="fa fa-comments"></i> 33</li>
+									<li><i class="fa fa-comments"></i><?php echo News::countComments($news->id); ?></li>
 								</ul>
                                 <?php echo $news->body; ?>
                                 
